@@ -1,0 +1,21 @@
+{
+  "alert_id": "ALERT_7821",
+  "customer_id": "CUST_1001",
+  "customer_name": "Arjun Malhotra",
+  "account_type": "current",
+  "customer_profile": "Student",
+  "alert_type": "Layering",
+  "transactions": {
+    "transaction_count": 2,
+    "total_amount": 10000,
+    "time_window_days": 1,
+    "destination_country": "UAE",
+    "reporting_threshold": 1000000
+  },
+  "customer_financials": {
+    "declared_monthly_income": 120000,
+    "avg_monthly_deposits_12m": 38000,
+    "historical_baseline_txn_count": 4
+  },
+  "pattern": "high velocity pass-through layering with rapid outbound remittance"
+}

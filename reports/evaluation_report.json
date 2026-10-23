@@ -1,0 +1,157 @@
+{
+  "dataset_summary": {
+    "total_transactions": 283,
+    "suspicious_count": 38,
+    "benign_count": 245,
+    "prevalence": 0.1343
+  },
+  "leakage_check": {
+    "passed": true,
+    "violations": [],
+    "checked_transactions": 283
+  },
+  "detector_runtimes_ms": {
+    "rules_engine": 12.5,
+    "isolation_forest": 205.66,
+    "graph_detector": 3.93
+  },
+  "individual_detectors": {
+    "rules_only": {
+      "confusion_matrix": {
+        "TP": 25,
+        "FP": 0,
+        "TN": 245,
+        "FN": 13
+      },
+      "precision": 1.0,
+      "recall": 0.6579,
+      "f1_score": 0.7937,
+      "pr_auc": 0.7038,
+      "roc_auc": 0.8289,
+      "alert_rate": 0.0883
+    },
+    "anomaly_only": {
+      "confusion_matrix": {
+        "TP": 38,
+        "FP": 10,
+        "TN": 235,
+        "FN": 0
+      },
+      "precision": 0.7917,
+      "recall": 1.0,
+      "f1_score": 0.8837,
+      "pr_auc": 0.7917,
+      "roc_auc": 0.9796,
+      "alert_rate": 0.1696
+    },
+    "graph_only": {
+      "confusion_matrix": {
+        "TP": 15,
+        "FP": 152,
+        "TN": 93,
+        "FN": 23
+      },
+      "precision": 0.0898,
+      "recall": 0.3947,
+      "f1_score": 0.1463,
+      "pr_auc": 0.1167,
+      "roc_auc": 0.3872,
+      "alert_rate": 0.5901
+    }
+  },
+  "ablations": {
+    "rules_plus_anomaly": {
+      "confusion_matrix": {
+        "TP": 25,
+        "FP": 0,
+        "TN": 245,
+        "FN": 13
+      },
+      "precision": 1.0,
+      "recall": 0.6579,
+      "f1_score": 0.7937,
+      "pr_auc": 0.9287,
+      "roc_auc": 0.993,
+      "alert_rate": 0.0883
+    },
+    "rules_plus_graph": {
+      "confusion_matrix": {
+        "TP": 15,
+        "FP": 152,
+        "TN": 93,
+        "FN": 23
+      },
+      "precision": 0.0898,
+      "recall": 0.3947,
+      "f1_score": 0.1463,
+      "pr_auc": 0.2242,
+      "roc_auc": 0.5215,
+      "alert_rate": 0.5901
+    },
+    "hybrid_full": {
+      "confusion_matrix": {
+        "TP": 37,
+        "FP": 7,
+        "TN": 238,
+        "FN": 1
+      },
+      "precision": 0.8409,
+      "recall": 0.9737,
+      "f1_score": 0.9024,
+      "pr_auc": 0.7863,
+      "roc_auc": 0.9625,
+      "alert_rate": 0.1555
+    }
+  },
+  "typology_breakdown": {
+    "BENIGN_BONUS": {
+      "total_instances": 1,
+      "recall_hybrid": 0.0,
+      "recall_rules": 0.0,
+      "recall_graph": 0.0,
+      "recall_anomaly": 1.0
+    },
+    "BENIGN_INVEST": {
+      "total_instances": 1,
+      "recall_hybrid": 0.0,
+      "recall_rules": 0.0,
+      "recall_graph": 0.0,
+      "recall_anomaly": 1.0
+    },
+    "BENIGN_MERCHANT": {
+      "total_instances": 12,
+      "recall_hybrid": 0.0,
+      "recall_rules": 0.0,
+      "recall_graph": 0.0,
+      "recall_anomaly": 0.0
+    },
+    "CIRCULAR_FLOW": {
+      "total_instances": 4,
+      "recall_hybrid": 1.0,
+      "recall_rules": 0.0,
+      "recall_graph": 1.0,
+      "recall_anomaly": 1.0
+    },
+    "FAN_IN_FAN_OUT": {
+      "total_instances": 10,
+      "recall_hybrid": 0.9,
+      "recall_rules": 0.2,
+      "recall_graph": 0.9,
+      "recall_anomaly": 1.0
+    },
+    "PASS_THROUGH": {
+      "total_instances": 2,
+      "recall_hybrid": 1.0,
+      "recall_rules": 0.5,
+      "recall_graph": 1.0,
+      "recall_anomaly": 1.0
+    },
+    "STRUCTURING": {
+      "total_instances": 22,
+      "recall_hybrid": 1.0,
+      "recall_rules": 1.0,
+      "recall_graph": 0.0,
+      "recall_anomaly": 1.0
+    }
+  }
+}

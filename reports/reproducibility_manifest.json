@@ -1,0 +1,89 @@
+{
+  "manifest_version": "1.0.0",
+  "project_title": "A Hybrid Fraud Detection and Retrieval-Augmented Suspicious Activity Report (SAR) Generation Framework for Banking Systems with Blockchain-Based Audit Integrity",
+  "generated_at_utc": "2026-10-18T14:27:00Z",
+  "environment": {
+    "python_version": "3.12.0",
+    "numpy_version": "2.5.3",
+    "scikit_learn_version": "1.9.1",
+    "networkx_version": "3.7",
+    "pydantic_version": "2.13.5",
+    "platform": "win32-AMD64"
+  },
+  "dataset_artifacts": {
+    "data/synthetic/transactions.csv": {
+      "sha256": "dd08901f9fc4416f6745f7f4ea9a327ac2517c80edaddf3c80bec560dbb41bbb",
+      "row_count": 1474
+    },
+    "data/synthetic/accounts.csv": {
+      "sha256": "76dba1e92879b828bdc918f5062468669262f70939a146b1de5bd8a2bcef849f",
+      "row_count": 39
+    },
+    "data/synthetic/customers.csv": {
+      "sha256": "00e3e1282d0ccc500ad1eddc228fb4c2e4a91d775b5756722aef812d9d6eb6ac",
+      "row_count": 30
+    },
+    "data/synthetic/scenario_ground_truth.csv": {
+      "sha256": "d24e805adf296a72111f423ff0a37fa5181c147d1282827957c56cc06fbd930a",
+      "row_count": 1474
+    },
+    "data/synthetic/investigation_cases.jsonl": {
+      "sha256": "2674a3c58a890cc9f29cb1d64444733b32e531d4b0c70c87df7bdb1c5f934405",
+      "case_count": 28
+    },
+    "data/synthetic/generation_manifest.json": {
+      "sha256": "563b913c18987fc70bdc6553c36f8da3c5803a985400c8dc73a1678658b5d4ae"
+    },
+    "rules.yaml": {
+      "sha256": "1e22f04cd5be4841f680a5a24a2ecc8bf84b228fffdbc181a8ae4c430f2e2c90",
+      "rule_version": "1.0.0"
+    }
+  },
+  "frozen_predictions": {
+    "reports/frozen_predictions/test_predictions_authoritative.json": {
+      "record_count": 295,
+      "test_positives": 118,
+      "test_negatives": 177
+    }
+  },
+  "partitions": {
+    "split_method": "chronological",
+    "train_range": [0, 884],
+    "val_range": [884, 1179],
+    "test_range": [1179, 1474],
+    "train_counts": { "total": 884, "positives": 29, "negatives": 855 },
+    "val_counts": { "total": 295, "positives": 42, "negatives": 253 },
+    "test_counts": { "total": 295, "positives": 118, "negatives": 177 }
+  },
+  "model_hyperparameters": {
+    "isolation_forest": {
+      "n_estimators": 100,
+      "contamination": "auto",
+      "random_state": 42,
+      "features": 16,
+      "score_normalization": "sigmoid_centered_at_zero"
+    },
+    "graph_detector": {
+      "version": "networkx-multigraph-v1.0",
+      "max_transactions": 5000,
+      "max_nodes": 250,
+      "max_cycle_length": 5,
+      "time_budget_sec": 3.0,
+      "fan_threshold": 3,
+      "pass_through_hours": 72.0
+    },
+    "rules_engine": {
+      "version": "rules-yaml-v1",
+      "config_file": "rules.yaml"
+    },
+    "hybrid_aggregator": {
+      "weights": { "rules": 0.35, "anomaly": 0.35, "graph": 0.30 },
+      "threshold_selection_partition": "validation_set_only",
+      "selected_threshold": 0.20
+    }
+  },
+  "reproduction_commands": [
+    "python scripts/generate_and_benchmark.py",
+    "python -m pytest tests/test_robustness_metrics.py tests/test_synthetic_generator.py tests/test_benchmark_integration.py"
+  ]
+}

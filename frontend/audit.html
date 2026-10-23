@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audit Trail | SAR Narrative Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <div class="navbar">
+        <div class="nav-title">SAR Narrative Generator</div>
+        <div class="actions">
+          <a class="btn-secondary" href="dashboard.html">Dashboard</a>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card" style="margin-bottom: 20px; border-left: 4px solid #10b981;" id="ledger-card">
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <div>
+              <h3 style="margin:0 0 4px 0;">Cryptographic Hash Ledger Integrity</h3>
+              <div id="ledger-status" style="font-size:14px; color:#64748b;">Checking hash-chain verification...</div>
+            </div>
+            <button id="btn-verify-ledger" class="btn-secondary" style="padding:6px 12px; font-size:12px;">Verify Now</button>
+          </div>
+          <div id="ledger-details" style="margin-top:10px; font-size:12px; color:#475569;"></div>
+        </div>
+
+        <div class="card">
+          <h3>Audit Timeline</h3>
+          <div id="timeline" class="timeline"></div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module">
+      import { getAudit, verifyLedger } from "./api.js";
+
+      if (!sessionStorage.getItem("jwt_token")) {
+        window.location.href = "index.html";
+      }
+
+      const params = new URLSearchParams(window.location.search);
+      const caseId = params.get("case_id");
+      const timeline = document.getElementById("timeline");
+      const ledgerStatus = document.getElementById("ledger-status");
+      const ledgerDetails = document.getElementById("ledger-details");
+      const ledgerCard = document.getElementById("ledger-card");
+      const btnVerify = document.getElementById("btn-verify-ledger");
+
+      if (!caseId) {
+        alert("Missing case_id query parameter");
+        window.location.href = "dashboard.html";
+      }
+
+      async function checkLedger() {
+        try {
+          const res = await verifyLedger();
+          if (res.is_valid) {
+            ledgerStatus.innerHTML = `<span style="color:#10b981; font-weight:bold;">CHAIN VALID</span> — ${res.verified_count} blocks verified sequentially.`;
+            ledgerCard.style.borderLeftColor = "#10b981";
+          } else {
+            ledgerStatus.innerHTML = `<span style="color:#ef4444; font-weight:bold;">TAMPER DETECTED</span> at block sequence #${res.first_failing_sequence} (${res.mismatch_category})`;
+            ledgerCard.style.borderLeftColor = "#ef4444";
+          }
+          ledgerDetails.innerHTML = `<div><strong>Verifier Output:</strong> ${res.details}</div><div style="margin-top:4px; color:#64748b;"><strong>Checkpoint Model:</strong> ${res.external_checkpoint_status}</div>`;
+        } catch (e) {
+          ledgerStatus.innerHTML = `<span style="color:#f59e0b;">Verification unavailable:</span> ${e.message}`;
+        }
+      }
+
+      btnVerify.addEventListener("click", checkLedger);
+
+      function eventClass(type) {
+        const t = (type || "").toUpperCase();
+        if (t.includes("INGEST")) return "event-ingestion";
+        if (t.includes("RULE")) return "event-rule";
+        if (t.includes("RETRIEVAL")) return "event-retrieval";
+        if (t.includes("GENERATION") || t.includes("LLM")) return "event-generation";
+        if (t.includes("VALIDATION")) return "event-validation";
+        if (t.includes("ANALYST") || t.includes("REVIEW")) return "event-analyst";
+        return "event-ingestion";
+      }
+
+      async function loadAudit() {
+        try {
+          const events = await getAudit(caseId);
+          timeline.innerHTML = events
+            .map(
+              (event) => `
+              <div class="timeline-event card ${eventClass(event.event_type)}">
+                <div><strong>${event.event_type}</strong></div>
+                <div style="color:#64748b; font-size:13px; margin:4px 0 8px;">${new Date(event.created_at).toLocaleString()}</div>
+                <details>
+                  <summary>View Payload</summary>
+                  <pre>${JSON.stringify(event.event_payload || {}, null, 2)}</pre>
+                </details>
+              </div>
+            `
+            )
+            .join("");
+        } catch (error) {
+          timeline.innerHTML = `<div class="error">Failed to load audit: ${error.message}</div>`;
+        }
+      }
+
+      await checkLedger();
+      await loadAudit();
+    </script>
+  </body>
+</html>

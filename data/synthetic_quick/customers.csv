@@ -1,0 +1,21 @@
+customer_id,name,occupation,monthly_income,risk_rating
+CUST_0001,Sanjay Deshmukh,Salaried employee,142524.82,LOW
+CUST_0002,Ishaan Kapoor,Retail business owner,352494.35,MEDIUM
+CUST_0003,Shreya Singh,Software Engineer,172193.58,LOW
+CUST_0004,Aditi Agarwal,Software Engineer,101541.22,LOW
+CUST_0005,Rahul Verma,Salaried employee,116380.53,LOW
+CUST_0006,Siddharth Singh,Import-Export Trader,293286.4,MEDIUM
+CUST_0007,Riya Malhotra,Salaried employee,145027.07,LOW
+CUST_0008,Devi Rao,Freelance Consultant,88070.06,LOW
+CUST_0009,Gaurav Menon,Software Engineer,77621.71,LOW
+CUST_0010,Ananya Nair,Freelance Consultant,138577.53,LOW
+CUST_0011,Tanvi Bose,Real Estate Broker,300578.08,MEDIUM
+CUST_0012,Zoya Patel,Software Engineer,164887.72,LOW
+CUST_0013,Tarun Verma,Freelance Consultant,134489.58,LOW
+CUST_0014,Siddharth Chawla,Salaried employee,130883.18,LOW
+CUST_0015,Sunil Mehta,Software Engineer,222510.37,LOW
+CUST_0016,Varun Deshmukh,Import-Export Trader,330682.84,MEDIUM
+CUST_0017,Sanjay Nair,Retail business owner,216966.96,MEDIUM
+CUST_0018,Gaurav Malhotra,Software Engineer,175734.89,LOW
+CUST_0019,Devi Singh,Student,8268.05,LOW
+CUST_0020,Nikhil Malhotra,Student,18692.29,LOW

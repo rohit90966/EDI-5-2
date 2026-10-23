@@ -1,0 +1,38 @@
+{
+  "version": "1.0.0",
+  "generation_timestamp": "2026-10-18T08:49:07.034974+00:00",
+  "config": {
+    "seed": 123,
+    "start_date": "2026-01-01T00:00:00Z",
+    "simulation_days": 20,
+    "num_normal_customers": 10,
+    "accounts_per_customer_max": 2,
+    "num_structuring_scenarios": 4,
+    "num_passthrough_scenarios": 4,
+    "num_circular_scenarios": 3,
+    "num_fan_in_fan_out_scenarios": 3,
+    "num_velocity_burst_scenarios": 3,
+    "num_profile_inconsistency_scenarios": 3,
+    "num_legitimate_bonus_controls": 4,
+    "num_retail_merchant_controls": 4,
+    "num_emergency_medical_controls": 3,
+    "num_property_downpayment_controls": 3,
+    "train_ratio": 0.6,
+    "val_ratio": 0.2,
+    "test_ratio": 0.2,
+    "default_initial_balance_min": 25000.0,
+    "default_initial_balance_max": 150000.0,
+    "output_dir": "data\\tmp_test\\run2"
+  },
+  "dataset_statistics": {
+    "customers_count": 10,
+    "accounts_count": 14,
+    "transactions_count": 470,
+    "scenarios_count": 28,
+    "investigation_cases_count": 28,
+    "suspicious_transactions_count": 189,
+    "benign_transactions_count": 281
+  },
+  "leakage_safety_declaration": "Zero scenario labels, target flags, or future timestamps are encoded into transactions.csv.",
+  "disclaimer": "All accounts, customers, counterparties, and transactions are purely fictional and synthetic for AML benchmark research."
+}

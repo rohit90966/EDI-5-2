@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering
+\caption{Dataset Composition and Chronological Partitioning ($N=1{,}474$)}
+\label{tab:dataset_composition}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Partition} & \textbf{Total} & \textbf{Suspicious} & \textbf{Benign} & \textbf{Pos. Rate} & \textbf{Time Span} & \textbf{Functional Role} \\
+\midrule
+Training & 884 & 0 & 884 & 0.00\% & Jan 01 -- Jan 24 & Unsupervised baseline fitting \\
+Validation & 295 & 42 & 253 & 14.24\% & Jan 24 -- Feb 08 & Threshold \& FPR calibration \\
+Test (Frozen) & 295 & 118 & 177 & 40.00\% & Feb 08 -- Mar 01 & Unbiased model evaluation \\
+\midrule
+\textbf{Total} & \textbf{1,474} & \textbf{160} & \textbf{1,314} & \textbf{10.85\%} & \textbf{60 Days Total} & \textbf{End-to-End Evaluation} \\
+\bottomrule
+\end{tabular}
+\end{table}

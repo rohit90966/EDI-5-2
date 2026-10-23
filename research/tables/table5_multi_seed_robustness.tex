@@ -1,0 +1,15 @@
+\begin{table*}[t]
+\centering
+\caption{Multi-Seed Robustness Evaluation across 10 Independent Data Generations ($N=10$ Seeds)}
+\label{tab:multi_seed_robustness}
+\begin{tabular}{lcccccc}
+\toprule
+\textbf{Model Architecture} & \textbf{Precision} & \textbf{Recall} & \textbf{F1 Score} & \textbf{ROC-AUC} & \textbf{PR-AUC} & \textbf{Alert Rate} \\
+\midrule
+Rules Engine Only & 1.0000 $\pm$ 0.0000 & 0.6316 $\pm$ 0.0277 & 0.7739 $\pm$ 0.0207 & 0.8158 $\pm$ 0.0139 & 0.6813 $\pm$ 0.0232 & 0.0851 $\pm$ 0.0030 \\
+Isolation Forest Only & 0.7242 $\pm$ 0.0432 & 0.9921 $\pm$ 0.0178 & 0.8367 $\pm$ 0.0325 & 0.9664 $\pm$ 0.0128 & 0.7199 $\pm$ 0.0486 & 0.1850 $\pm$ 0.0074 \\
+Graph Detector Only & 0.1161 $\pm$ 0.0167 & 0.3973 $\pm$ 0.0083 & 0.1791 $\pm$ 0.0204 & 0.4584 $\pm$ 0.0386 & 0.1274 $\pm$ 0.0078 & 0.4695 $\pm$ 0.0657 \\
+Hybrid Ensemble & 0.8637 $\pm$ 0.0372 & 0.9711 $\pm$ 0.0230 & 0.9136 $\pm$ 0.0209 & 0.9695 $\pm$ 0.0086 & 0.8038 $\pm$ 0.0442 & 0.1517 $\pm$ 0.0068 \\
+\bottomrule
+\end{tabular}
+\end{table*}

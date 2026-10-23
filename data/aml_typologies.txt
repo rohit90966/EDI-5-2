@@ -1,0 +1,75 @@
+TYPOLOGY — LAYERING VIA PASS-THROUGH ACCOUNTS
+FATF Reference: Typology Report 2023, Section 4.2
+---
+Layering is the second stage of the money laundering process, following placement of illicit funds into the financial system. The objective of layering is to create distance between the funds and their criminal origin through a series of financial transactions designed to obscure the audit trail and defeat investigative tracing.
+
+Pass-through account layering involves the use of one or more domestic bank accounts as transit mechanisms. The account receives inbound transfers from multiple sources, aggregates them briefly, and then remits the consolidated balance outward — typically to an offshore or high-risk jurisdiction — within a short time window. The defining characteristic is the near-zero residual balance after each cycle: the account holds funds only transiently and retains no legitimate commercial purpose.
+
+Key indicators of pass-through layering:
+Multiple inbound transfers received within a short window from dispersed domestic sources followed by consolidated outbound remittance. Residual account balance returning to near zero after each cycle. Outbound destination in a FATF high-risk or non-cooperative jurisdiction. No identifiable commercial or personal financial purpose for the observed fund flows. Transaction velocity substantially exceeding the account holder's declared profile. Individual transaction amounts sized below mandatory reporting thresholds.
+
+Regulatory significance: Pass-through layering via domestic accounts is a technique frequently associated with proceeds of organised crime, corruption, and terrorism financing. The involvement of FATF-listed jurisdictions elevates the risk classification and triggers mandatory enhanced due diligence obligations under PMLA KYC Guidelines.
+
+---
+TYPOLOGY — STRUCTURING AND SMURFING
+FATF Reference: Typology Report 2023, Section 3.1 | FIU-IND Guideline Section 3.2
+---
+Structuring, also referred to as smurfing, is the deliberate division of a larger sum of funds into multiple smaller transactions, each individually sized to fall below a mandatory reporting threshold, with the intent of avoiding the automatic generation of Currency Transaction Reports or Suspicious Transaction Reports.
+
+The reporting threshold in India under RBI Master Direction 2023 is INR 1,00,000 for cash transactions. Structuring occurs when a subject consistently sizes transactions to remain below this threshold, particularly when the aggregate value of the structured transactions, if combined, would have triggered mandatory reporting.
+
+Key indicators of structuring:
+Multiple transactions each individually below INR 1,00,000 (or applicable threshold). Consistent sizing in the 70-99% band of the threshold — transactions of INR 65,000 to INR 99,000 where none reaches INR 1,00,000. High frequency of transactions over a short period. Use of multiple channels, branches, or deposit locations to disperse the pattern. Aggregate transaction volume inconsistent with the account holder's declared income or business profile.
+
+Below-threshold structuring sub-indicator: When the average transaction amount across a series falls within the 70-99% band of the reporting threshold, this is a primary indicator of deliberate threshold avoidance rather than coincidental transaction sizing.
+
+Regulatory significance: Structuring is explicitly prohibited under PMLA 2002. The FIU-IND requires financial institutions to file STRs when structuring indicators are detected regardless of whether any individual transaction meets the mandatory CTR threshold.
+
+---
+TYPOLOGY — ROUND TRIPPING
+FATF Reference: Typology Report 2023, Section 5.3
+---
+Round tripping is an AML technique in which funds are transferred offshore and subsequently repatriated to the originating jurisdiction — or a related entity — under the guise of legitimate foreign investment, trade finance proceeds, or loan repayments. The technique is used to integrate funds of illicit origin into the formal financial system with an apparent legitimacy narrative.
+
+The defining characteristic of round tripping is the circular flow: funds leave a domestic account bound for an offshore jurisdiction, are processed through one or more offshore intermediary entities, and return to the same or related domestic account as apparent foreign-origin receipts. The net economic effect is negligible; the purpose is regulatory laundering of the funds' origin.
+
+Key indicators of round tripping:
+Inbound international wire transfers from offshore corporate entities with no identifiable trade or investment relationship with the account holder. Outbound international transfers of equivalent or near-equivalent value to a different offshore entity, typically in a separate high-risk jurisdiction. Near-zero net change in account balance across the full monitoring period. No supporting trade documentation, invoices, or contracts corresponding to the fund flows. Involvement of jurisdictions with strong secrecy laws or low transparency standards. Account holder's declared business activity inconsistent in scale with the observed cross-border transaction values.
+
+---
+TYPOLOGY — HIGH VELOCITY TRANSACTIONS
+RBI Reference: AML Guidelines — Velocity Check Parameters
+---
+High velocity transaction activity refers to a pattern in which the rate of transactions per day or per week substantially exceeds the thresholds established by the institution's risk-based monitoring framework, taking into account the account holder's declared profile and account type.
+
+Velocity is a primary indicator of layering activity because genuine commercial or personal financial activity rarely requires the execution of multiple daily transactions over an extended period. High velocity in conjunction with cross-border outbound transfers or sub-threshold transaction sizing significantly elevates the AML risk classification.
+
+Key indicators:
+Transaction per day rate exceeding institutional velocity threshold (typically 5 transactions per day for individual accounts). Transaction velocity inconsistent with account type — savings accounts have lower expected velocity than current accounts. Velocity increase representing a multiple of the account holder's historical baseline rate. Velocity concentrated in a narrow time window rather than distributed across a normal calendar pattern.
+
+RBI threshold reference: The RBI AML Guidelines establish a velocity monitoring threshold of 5 transactions per day as a base alert parameter for individual account profiles. Accounts exceeding this threshold require enhanced scrutiny.
+
+---
+TYPOLOGY — PROFILE INCONSISTENCY
+PMLA Reference: KYC Guidelines — Customer Risk Profiling
+---
+Profile inconsistency arises when the transaction activity observed in an account materially exceeds what would be expected for a customer of the account holder's declared occupational, income, or business profile. It is a cross-cutting risk indicator that amplifies the significance of other AML typology triggers.
+
+Customer profile benchmarks used in risk assessment:
+Retail business owner — expected maximum monthly transaction volume INR 20,00,000
+Salaried employee — expected maximum monthly transaction volume INR 5,00,000
+Student — expected maximum monthly transaction volume INR 1,00,000
+Retired individual — expected maximum monthly transaction volume INR 3,00,000
+
+When observed transaction volumes exceed these profile benchmarks, the institution is required to initiate enhanced due diligence including source of funds verification. Profile inconsistency combined with other AML indicators such as jurisdiction risk, velocity, or structuring elevates the overall risk score to HIGH and requires mandatory SAR filing.
+
+---
+TYPOLOGY — RAPID FUND MOVEMENT
+FATF Reference: Recommendation 16 — Wire Transfers
+---
+Rapid fund movement describes a pattern in which funds received into an account are remitted outward, typically internationally, within a very short time window — typically 72 hours or fewer — from the time of receipt. The brevity of the holding period eliminates any plausible commercial or investment purpose for the funds remaining in the account and is a primary indicator of layering activity.
+
+FATF Recommendation 16 specifically identifies rapid international wire transfers as a high-risk indicator requiring enhanced due diligence by correspondent and receiving financial institutions. The combination of rapid movement and a high-risk destination jurisdiction represents one of the highest-risk transaction patterns in the AML risk framework.
+
+Key indicators:
+Funds received and remitted internationally within 72 hours (3 days) of receipt. No interim commercial activity, expenditure, or investment suggesting the funds served a legitimate purpose during the holding period. Outbound destination in a FATF high-risk or non-cooperative jurisdiction. Pattern repeated across multiple cycles within the monitoring period. Individual transaction amounts showing sub-threshold sizing consistent with structuring.

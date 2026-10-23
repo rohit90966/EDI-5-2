@@ -1,0 +1,11 @@
+customer_id,name,occupation,monthly_income,risk_rating
+CUST_0001,Aditi Malhotra,Software Engineer,206101.71,LOW
+CUST_0002,Kavita Deshmukh,Salaried employee,89973.03,LOW
+CUST_0003,Rakesh Menon,Freelance Consultant,177073.43,LOW
+CUST_0004,Devi Gupta,Freelance Consultant,131949.11,LOW
+CUST_0005,Siddharth Kapoor,Retail business owner,80618.1,MEDIUM
+CUST_0006,Pooja Chawla,Import-Export Trader,195420.02,MEDIUM
+CUST_0007,Meera Reddy,Software Engineer,232025.74,LOW
+CUST_0008,Arjun Gupta,Retail business owner,372326.58,MEDIUM
+CUST_0009,Aarav Mehta,Import-Export Trader,522715.26,MEDIUM
+CUST_0010,Kavita Saxena,Salaried employee,146475.24,LOW

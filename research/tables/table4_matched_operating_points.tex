@@ -1,0 +1,21 @@
+\begin{table*}[t]
+\centering
+\caption{Matched Operating Points: Validation-Selected Thresholds vs Achieved Test Trade-Offs}
+\label{tab:matched_operating_points}
+\begin{tabular}{clcccccccccc}
+\toprule
+\textbf{Val Budget} & \textbf{Model} & \textbf{Val $\tau$} & \textbf{Val FPR} & \textbf{Test FPR} & \textbf{TP} & \textbf{FP} & \textbf{TN} & \textbf{FN} & \textbf{Precision} & \textbf{Recall} & \textbf{F1} \\
+\midrule
+<= 1% & Isolation Forest & 0.649 & 0.0079 & 0.0113 & 11 & 2 & 175 & 107 & 0.8462 & 0.0932 & 0.1679 \\
+<= 1% & Hybrid Ensemble & 0.509 & 0.0079 & 0.0056 & 19 & 1 & 176 & 99 & 0.9500 & 0.1610 & 0.2754 \\
+<= 3% & Isolation Forest & 0.632 & 0.0277 & 0.0113 & 16 & 2 & 175 & 102 & 0.8889 & 0.1356 & 0.2353 \\
+<= 3% & Hybrid Ensemble & 0.504 & 0.0277 & 0.0056 & 22 & 1 & 176 & 96 & 0.9565 & 0.1864 & 0.3121 \\
+<= 5% & Isolation Forest & 0.597 & 0.0474 & 0.0113 & 49 & 2 & 175 & 69 & 0.9608 & 0.4153 & 0.5799 \\
+<= 5% & Hybrid Ensemble & 0.484 & 0.0474 & 0.0056 & 43 & 1 & 176 & 75 & 0.9773 & 0.3644 & 0.5309 \\
+<= 8% & Isolation Forest & 0.570 & 0.0791 & 0.0226 & 61 & 4 & 173 & 57 & 0.9385 & 0.5169 & 0.6667 \\
+<= 8% & Hybrid Ensemble & 0.292 & 0.0791 & 0.0056 & 63 & 1 & 176 & 55 & 0.9844 & 0.5339 & 0.6923 \\
+<= 10% & Isolation Forest & 0.563 & 0.0988 & 0.0282 & 65 & 5 & 172 & 53 & 0.9286 & 0.5508 & 0.6915 \\
+<= 10% & Hybrid Ensemble & 0.243 & 0.0988 & 0.0678 & 63 & 12 & 165 & 55 & 0.8400 & 0.5339 & 0.6528 \\
+\bottomrule
+\end{tabular}
+\end{table*}

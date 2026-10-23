@@ -1,0 +1,360 @@
+{
+  "seeds_evaluated": [
+    42,
+    101,
+    202,
+    303,
+    404,
+    505,
+    606,
+    707,
+    808,
+    909
+  ],
+  "sample_count": 10,
+  "metrics_summary": {
+    "rules_only": {
+      "precision": {
+        "mean": 1.0,
+        "std": 0.0,
+        "ci95_low": 1.0,
+        "ci95_high": 1.0
+      },
+      "recall": {
+        "mean": 0.6316,
+        "std": 0.0277,
+        "ci95_low": 0.6118,
+        "ci95_high": 0.6514
+      },
+      "f1_score": {
+        "mean": 0.7739,
+        "std": 0.0207,
+        "ci95_low": 0.7591,
+        "ci95_high": 0.7887
+      },
+      "pr_auc": {
+        "mean": 0.6813,
+        "std": 0.0232,
+        "ci95_low": 0.6647,
+        "ci95_high": 0.6978
+      },
+      "roc_auc": {
+        "mean": 0.8158,
+        "std": 0.0139,
+        "ci95_low": 0.8058,
+        "ci95_high": 0.8257
+      },
+      "alert_rate": {
+        "mean": 0.0851,
+        "std": 0.003,
+        "ci95_low": 0.0829,
+        "ci95_high": 0.0872
+      }
+    },
+    "anomaly_only": {
+      "precision": {
+        "mean": 0.7242,
+        "std": 0.0432,
+        "ci95_low": 0.6933,
+        "ci95_high": 0.7551
+      },
+      "recall": {
+        "mean": 0.9921,
+        "std": 0.0178,
+        "ci95_low": 0.9794,
+        "ci95_high": 1.0048
+      },
+      "f1_score": {
+        "mean": 0.8367,
+        "std": 0.0325,
+        "ci95_low": 0.8135,
+        "ci95_high": 0.86
+      },
+      "pr_auc": {
+        "mean": 0.7199,
+        "std": 0.0486,
+        "ci95_low": 0.6851,
+        "ci95_high": 0.7547
+      },
+      "roc_auc": {
+        "mean": 0.9664,
+        "std": 0.0128,
+        "ci95_low": 0.9573,
+        "ci95_high": 0.9756
+      },
+      "alert_rate": {
+        "mean": 0.185,
+        "std": 0.0074,
+        "ci95_low": 0.1797,
+        "ci95_high": 0.1903
+      }
+    },
+    "graph_only": {
+      "precision": {
+        "mean": 0.1161,
+        "std": 0.0167,
+        "ci95_low": 0.1042,
+        "ci95_high": 0.1281
+      },
+      "recall": {
+        "mean": 0.3973,
+        "std": 0.0083,
+        "ci95_low": 0.3914,
+        "ci95_high": 0.4033
+      },
+      "f1_score": {
+        "mean": 0.1791,
+        "std": 0.0204,
+        "ci95_low": 0.1646,
+        "ci95_high": 0.1937
+      },
+      "pr_auc": {
+        "mean": 0.1274,
+        "std": 0.0078,
+        "ci95_low": 0.1218,
+        "ci95_high": 0.133
+      },
+      "roc_auc": {
+        "mean": 0.4584,
+        "std": 0.0386,
+        "ci95_low": 0.4307,
+        "ci95_high": 0.486
+      },
+      "alert_rate": {
+        "mean": 0.4695,
+        "std": 0.0657,
+        "ci95_low": 0.4224,
+        "ci95_high": 0.5165
+      }
+    },
+    "hybrid_full": {
+      "precision": {
+        "mean": 0.8637,
+        "std": 0.0372,
+        "ci95_low": 0.837,
+        "ci95_high": 0.8903
+      },
+      "recall": {
+        "mean": 0.9711,
+        "std": 0.023,
+        "ci95_low": 0.9546,
+        "ci95_high": 0.9875
+      },
+      "f1_score": {
+        "mean": 0.9136,
+        "std": 0.0209,
+        "ci95_low": 0.8987,
+        "ci95_high": 0.9286
+      },
+      "pr_auc": {
+        "mean": 0.8038,
+        "std": 0.0442,
+        "ci95_low": 0.7722,
+        "ci95_high": 0.8355
+      },
+      "roc_auc": {
+        "mean": 0.9695,
+        "std": 0.0086,
+        "ci95_low": 0.9633,
+        "ci95_high": 0.9756
+      },
+      "alert_rate": {
+        "mean": 0.1517,
+        "std": 0.0068,
+        "ci95_low": 0.1468,
+        "ci95_high": 0.1566
+      }
+    }
+  },
+  "average_confusion_matrices": {
+    "rules_only": {
+      "TP": 24.0,
+      "FP": 0.0,
+      "TN": 244.2,
+      "FN": 14.0
+    },
+    "anomaly_only": {
+      "TP": 37.7,
+      "FP": 14.5,
+      "TN": 229.7,
+      "FN": 0.3
+    },
+    "graph_only": {
+      "TP": 15.1,
+      "FP": 117.4,
+      "TN": 126.8,
+      "FN": 22.9
+    },
+    "hybrid_full": {
+      "TP": 36.9,
+      "FP": 5.9,
+      "TN": 238.3,
+      "FN": 1.1
+    }
+  },
+  "paired_comparison_hybrid_vs_if": {
+    "f1_score": {
+      "mean_difference": 0.0769,
+      "t_statistic": 7.3985,
+      "p_value": 4e-05,
+      "wilcoxon_p_value": 0.00195,
+      "statistically_significant_p05": true
+    },
+    "precision": {
+      "mean_difference": 0.1395,
+      "t_statistic": 7.8842,
+      "p_value": 2e-05,
+      "wilcoxon_p_value": 0.00195,
+      "statistically_significant_p05": true
+    },
+    "recall": {
+      "mean_difference": -0.021,
+      "t_statistic": -6.0,
+      "p_value": 0.0002,
+      "wilcoxon_p_value": 0.00781,
+      "statistically_significant_p05": true
+    },
+    "pr_auc": {
+      "mean_difference": 0.0839,
+      "t_statistic": 4.3245,
+      "p_value": 0.00192,
+      "wilcoxon_p_value": 0.00586,
+      "statistically_significant_p05": true
+    },
+    "roc_auc": {
+      "mean_difference": 0.0031,
+      "t_statistic": 0.8524,
+      "p_value": 0.41608,
+      "wilcoxon_p_value": 0.44531,
+      "statistically_significant_p05": false
+    }
+  },
+  "typology_recall_summary": {
+    "BENIGN_BONUS": {
+      "rules": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "anomaly": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "graph": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "hybrid": {
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    "BENIGN_INVEST": {
+      "rules": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "anomaly": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "graph": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "hybrid": {
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    "BENIGN_MERCHANT": {
+      "rules": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "anomaly": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "graph": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "hybrid": {
+        "mean": 0.0,
+        "std": 0.0
+      }
+    },
+    "CIRCULAR_FLOW": {
+      "rules": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "anomaly": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "graph": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "hybrid": {
+        "mean": 1.0,
+        "std": 0.0
+      }
+    },
+    "FAN_IN_FAN_OUT": {
+      "rules": {
+        "mean": 0.1,
+        "std": 0.1054
+      },
+      "anomaly": {
+        "mean": 0.97,
+        "std": 0.0675
+      },
+      "graph": {
+        "mean": 0.91,
+        "std": 0.0316
+      },
+      "hybrid": {
+        "mean": 0.89,
+        "std": 0.0876
+      }
+    },
+    "PASS_THROUGH": {
+      "rules": {
+        "mean": 0.5,
+        "std": 0.0
+      },
+      "anomaly": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "graph": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "hybrid": {
+        "mean": 1.0,
+        "std": 0.0
+      }
+    },
+    "STRUCTURING": {
+      "rules": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "anomaly": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "graph": {
+        "mean": 0.0,
+        "std": 0.0
+      },
+      "hybrid": {
+        "mean": 1.0,
+        "std": 0.0
+      }
+    }
+  }
+}

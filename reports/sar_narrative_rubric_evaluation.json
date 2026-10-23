@@ -1,0 +1,78 @@
+{
+  "evaluated_cases_count": 3,
+  "average_rubric_score": 80.0,
+  "case_evaluations": [
+    {
+      "case_name": "CASE_01_STRUCTURING_RETAIL",
+      "evaluation": {
+        "total_score": 80.0,
+        "grade": "ACCEPTABLE",
+        "dimension_scores": {
+          "factual_support": 15.0,
+          "evidence_coverage": 10.0,
+          "unsupported_claims_absence": 20.0,
+          "typology_consistency": 20.0,
+          "pii_and_structure": 15.0
+        },
+        "deductions": [
+          "Total transaction amount '1200000' not cited accurately.",
+          "Found hallucinated or unregistered transaction IDs: {'TXN_00034', 'TXN_00032', 'TXN_00033', 'TXN_00036', 'TXN_00035', 'TXN_00031'}",
+          "Structural non-compliance: expected 5 paragraphs, found 1."
+        ],
+        "paragraph_count": 1,
+        "word_count": 181,
+        "pii_leak_detected": false
+      },
+      "generated_narrative_sample": "```json\n{\n \"report\": {\n \"type\": \"Cash Intensive\",\n \"customer_profile\": \"Salaried Employee\",\n \"jurisdiction\": \"Domestic\",\n \"account_type\": \"Current\",\n \"account_holder\": {\n \"income\": \"INR 50,000 per month\",\n \"average_monthly_deposits\": \"INR 1,00,000\",\n...",
+      "validation_passed": false
+    },
+    {
+      "case_name": "CASE_02_RAPID_PASSTHROUGH_UAE",
+      "evaluation": {
+        "total_score": 80.0,
+        "grade": "ACCEPTABLE",
+        "dimension_scores": {
+          "factual_support": 15.0,
+          "evidence_coverage": 10.0,
+          "unsupported_claims_absence": 20.0,
+          "typology_consistency": 20.0,
+          "pii_and_structure": 15.0
+        },
+        "deductions": [
+          "Total transaction amount '1250000' not cited accurately.",
+          "Found hallucinated or unregistered transaction IDs: {'TXN_00031', 'TXN_00032'}",
+          "Structural non-compliance: expected 5 paragraphs, found 1."
+        ],
+        "paragraph_count": 1,
+        "word_count": 46,
+        "pii_leak_detected": false
+      },
+      "generated_narrative_sample": "```json\n{\n \"paragraphs\": ,\n \"transactions\": {\n \"TXN_00031\": \"The first transaction of INR 625,000 received on Day 1.\",\n \"TXN_00032\": \"The second transaction of INR 625,000 received on Day 1.\"\n }\n}\n``` Based on the findings, this Suspicious Activity R...",
+      "validation_passed": false
+    },
+    {
+      "case_name": "CASE_03_CIRCULAR_FLOW_LOOP",
+      "evaluation": {
+        "total_score": 80.0,
+        "grade": "ACCEPTABLE",
+        "dimension_scores": {
+          "factual_support": 15.0,
+          "evidence_coverage": 10.0,
+          "unsupported_claims_absence": 20.0,
+          "typology_consistency": 20.0,
+          "pii_and_structure": 15.0
+        },
+        "deductions": [
+          "Total transaction amount '3400000' not cited accurately.",
+          "Found hallucinated or unregistered transaction IDs: {'TXN_00031', 'TXN_00032', 'TXN_00033'}",
+          "Structural non-compliance: expected 5 paragraphs, found 1."
+        ],
+        "paragraph_count": 1,
+        "word_count": 239,
+        "pii_leak_detected": false
+      },
+      "generated_narrative_sample": "```json\n{\n \"report\": {\n \"account_type\": \"Savings\",\n \"customer_profile\": \"Individual\",\n \"time_window_days\": 30,\n \"transaction_count\": 57,\n \"total_amount\": 1450000,\n \"avg_amount\": 25342.46,\n \"txn_per_day\": 1.9,\n \"deviation_pct\": 120,\n \"alert_type\": \"Ca...",
+      "validation_passed": false
+    }
+  ]
+}

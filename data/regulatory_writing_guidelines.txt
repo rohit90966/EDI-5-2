@@ -1,0 +1,83 @@
+GUIDELINE — SAR NARRATIVE SENTENCE STARTERS AND WRITING PATTERNS
+Source: Internal Compliance Writing Reference
+---
+PARAGRAPH 1 — BACKGROUND AND FILING CONTEXT
+
+Approved opening sentences:
+The filing institution is submitting this Suspicious Activity Report in respect of a [account type] account held by [customer profile] at this institution.
+The filing institution files this Suspicious Activity Report concerning a [account type] account flagged by the institution's automated transaction monitoring system.
+This Suspicious Activity Report is submitted by the filing institution following a review of anomalous transaction activity identified in a [account type] account during the monitoring period.
+The filing institution has determined, following a preliminary investigation, that transaction activity observed in a [account type] account during the period under review meets the criteria for SAR submission under PMLA Section 12.
+
+Approved context phrases:
+...was identified through the institution's rule-based transaction surveillance system...
+...was flagged following the detection of anomalous inbound and outbound transfer activity...
+...the account was identified as exhibiting transaction patterns inconsistent with the account holder's declared profile...
+...the institution's automated monitoring system generated an alert for potential [typology] activity...
+...the review was initiated following a [typology] alert generated during a [N]-day monitoring period...
+
+---
+PARAGRAPH 2 — TRANSACTION SUMMARY
+
+Approved transaction description phrases:
+During the monitoring period, the account received [N] inbound fund transfers aggregating to INR [amount].
+The account received [N] separate [cash/wire/NEFT/RTGS] transfers from [N] distinct [domestic/international] sources, with a combined value of INR [amount].
+Within [N] hours/days of each inbound receipt, the account holder initiated corresponding outbound [wire/NEFT/IMPS] transfers directing the consolidated funds to [destination].
+The residual account balance returned to near zero following each completed outbound cycle, indicating that the account was being used as a pass-through conduit rather than for legitimate accumulation.
+Each inbound transfer was followed within [N] hours by a corresponding outbound remittance of equivalent or near-equivalent value.
+The outbound transfers were directed exclusively to beneficiary accounts held at financial institutions in [country], a jurisdiction designated as high-risk by the Financial Action Task Force.
+
+Prohibited phrases — never use:
+"Total inbound:" (data label — not prose)
+"Transaction count:" (data label — not prose)
+"Residual balance: INR None" (null value — omit sentence)
+"As per the data provided..." (meta-reference)
+"Based on the above..." (hollow transition)
+
+---
+PARAGRAPH 3 — STATISTICAL DEVIATION AND TYPOLOGY INDICATORS
+
+Approved deviation citation phrases:
+The observed transaction volume represents a [X]% increase over the account holder's documented twelve-month average monthly deposits.
+The total value transited during the monitoring period exceeds the account holder's declared monthly income by a factor of [N].
+The average individual transaction amount of INR [X] fell consistently below the RBI mandatory reporting threshold of INR [threshold], a pattern characteristic of deliberate threshold avoidance.
+Each of the [N] transactions in the monitoring period was individually sized between INR [lower] and INR [upper], placing all transactions within the [X] to [Y] percent band of the reporting threshold.
+The account holder's declared [occupation/profile] would suggest a maximum expected transaction volume of INR [X] per month; the observed activity exceeds this ceiling by [N] times.
+The transaction count of [N] over [days] days represents a per-day velocity of [X] transactions, exceeding the institution's velocity threshold of [threshold] transactions per day.
+
+---
+PARAGRAPH 4 — TYPOLOGY AND RULE RATIONALE
+
+Approved typology reference phrases:
+The fund flow pattern is consistent with the recognised AML typology of [typology name].
+The observed pattern is consistent with the [typology] sub-typology of [specific variant], wherein [mechanism description].
+The pattern is indicative of a coordinated effort to [placement/layering/integration mechanism] and to defeat automated audit trail mechanisms.
+The involvement of a FATF-designated high-risk jurisdiction as the [sole/primary] destination for outbound transfers is a recognised indicator of cross-border layering.
+The systematic sub-threshold transaction sizing across [N] transactions demonstrates a level of operational planning inconsistent with routine [financial/business/personal] activity.
+The following AML rules were triggered during the compliance review: [rule name] ([rule ID]), [rule name] ([rule ID]), and [rule name] ([rule ID]).
+Rule [ID] was triggered because [specific factual reason from evidence block]. Rule [ID] was triggered because [specific factual reason from evidence block].
+
+---
+PARAGRAPH 5 — FILING DECISION AND ENHANCED MONITORING
+
+Approved closing sentences:
+Based on the totality of evidence assembled during this review, the filing institution has determined that the transaction activity is suspicious and does not have a discernible lawful explanation consistent with the account holder's declared profile.
+The filing institution has determined that the observed activity meets the threshold for SAR submission and files this report pursuant to PMLA Section 12 and Rule 3 of the Prevention of Money Laundering (Maintenance of Records) Rules 2005.
+This SAR is filed under PMLA Section 12. The account has been placed under enhanced transaction monitoring with immediate effect.
+The account has been referred for enhanced due diligence review including re-verification of source of funds and beneficial ownership documentation.
+All related accounts identified through network analysis have been flagged for concurrent review.
+The matter has been escalated to the institution's Financial Intelligence Unit for further investigation and potential referral to the relevant law enforcement authority.
+Source of funds documentation has been requested from the account holder pending completion of the enhanced due diligence process.
+
+---
+APPROVED REGULATORY CITATIONS
+
+PMLA 2002 Section 12 — mandatory SAR reporting obligation for banking institutions
+RBI Master Direction on KYC 2016 — customer risk profiling and monitoring obligations
+RBI AML Guidelines — velocity and structuring threshold parameters
+FIU-IND Guideline Section 3.2 — structuring and smurfing reporting requirements
+FATF Recommendation 16 — wire transfer transparency and suspicious activity reporting
+FATF High Risk Jurisdictions 2024 — list of jurisdictions subject to enhanced monitoring
+PMLA KYC Guidelines — customer risk profiling obligations
+Prevention of Money Laundering (Maintenance of Records) Rules 2005, Rule 3 — SAR filing procedure
+RBI Master Direction 2023 — Currency Transaction Report filing obligations above INR 1,00,000

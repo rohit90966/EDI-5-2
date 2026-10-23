@@ -1,0 +1,42 @@
+TEMPLATE — LAYERING NARRATIVE (SALARIED EMPLOYEE, INTERNATIONAL TRANSFER)
+Use for: Layering typology, individual account holder, cross-border outbound
+---
+The filing institution is submitting this Suspicious Activity Report concerning a {account_type} account held by a {customer_profile} at this institution. The account was flagged by the institution's automated transaction monitoring system following the detection of anomalous inbound and outbound transfer activity during a {time_window_days}-day monitoring period. The filing institution has conducted a preliminary review and determined that the observed activity meets the threshold for SAR submission under the Prevention of Money Laundering Act 2002, Section 12.
+
+During the monitoring period, the account received {transaction_count} inbound fund transfers from multiple domestic sources, aggregating to INR {total_amount}. Within a short time window following each receipt, the account holder initiated corresponding outbound international wire transfers directing the consolidated funds to beneficiary accounts at financial institutions in {destination_country}. The residual account balance returned to near zero following each completed outbound cycle, indicating that the account was functioning as a pass-through transit mechanism rather than serving any identifiable legitimate accumulation or expenditure purpose.
+
+The observed transaction activity represents a significant deviation from the account holder's established financial profile. The total value transited during the monitoring period represents a {deviation_pct}% increase over the account holder's documented twelve-month average monthly deposits. The average individual transaction amount of INR {avg_amount} fell consistently below the RBI mandatory reporting threshold, a pattern consistent with deliberate threshold avoidance. The transaction velocity of {txn_per_day} transactions per day exceeded the institutional monitoring threshold.
+
+The fund flow pattern — multiple domestic inflows followed by rapid consolidated cross-border outflows to a high-risk jurisdiction, with near-zero residual balances — is consistent with the recognised AML typology of {alert_type}. The destination jurisdiction, {destination_country}, appears on the FATF high-risk jurisdiction list, elevating the risk classification of the observed cross-border transfers. The combination of sub-threshold transaction sizing, high velocity, profile inconsistency, and high-risk jurisdiction exposure is indicative of a coordinated layering operation designed to obscure the origin of funds.
+
+Based on the evidence assembled during this review, the filing institution has determined that the activity is suspicious and files this SAR pursuant to PMLA Section 12. The account has been placed under enhanced monitoring with immediate effect, and all related accounts identified through network analysis have been flagged for review. Source of funds documentation has been requested from the account holder, and the matter has been escalated to the institution's Financial Intelligence Unit.
+
+---
+
+TEMPLATE — STRUCTURING NARRATIVE (BUSINESS ACCOUNT, CASH DEPOSITS)
+Use for: Structuring typology, business or individual, domestic cash activity
+---
+The filing institution submits this Suspicious Activity Report in respect of a {account_type} account held by a {customer_profile} at this institution. The account was identified by the institution's transaction surveillance system as exhibiting cash deposit patterns consistent with deliberate structuring to circumvent mandatory Currency Transaction Reporting obligations under RBI Master Direction 2023. The monitoring period encompasses {time_window_days} calendar days.
+
+During the monitoring period, the account received {transaction_count} separate transactions with an aggregate value of INR {total_amount}. Each individual transaction was individually sized below the RBI mandatory reporting threshold of INR 1,00,000. The average individual transaction amount of INR {avg_amount} placed the transactions consistently within the sub-threshold band, a pattern characteristic of deliberate threshold avoidance rather than incidental transaction sizing. The transactions occurred at a rate of {txn_per_day} per day across the monitoring period.
+
+The aggregate transaction volume observed during the monitoring period is inconsistent with the account holder's declared financial profile. The total of INR {total_amount} transited during this period represents a {deviation_pct}% increase over the account holder's documented historical baseline. No supplemental income sources or commercial activities have been declared that would provide a legitimate explanation for transaction volumes of this magnitude concentrated within the monitoring window.
+
+The pattern of multiple transactions each systematically sized below the mandatory reporting threshold, accumulated over {time_window_days} days, is consistent with the AML typology of {alert_type}. The systematic sub-threshold sizing across {transaction_count} transactions demonstrates operational planning inconsistent with routine financial activity and is a primary indicator of deliberate structuring under PMLA 2002 and FIU-IND Guideline Section 3.2. The triggered compliance rules include structured threshold avoidance, velocity exceedance, and profile inconsistency.
+
+The filing institution has determined that the transaction activity is suspicious and files this SAR under PMLA Section 12. The account has been placed under enhanced monitoring. A source of funds review has been initiated and documentation has been requested from the account holder. The matter has been referred to the institution's Senior Compliance Officer for further investigation and potential escalation to the Financial Intelligence Unit of India.
+
+---
+
+TEMPLATE — ROUND TRIPPING NARRATIVE (CORPORATE ACCOUNT)
+Use for: Round tripping typology, corporate or business entity account
+---
+The filing institution files this Suspicious Activity Report in connection with a {account_type} account held by a {customer_profile} at this institution. The account was identified through the institution's enhanced monitoring programme following the detection of circular cross-border fund flow patterns during a {time_window_days}-day monitoring period. The filing institution has determined that the observed activity is consistent with round tripping activity and meets the threshold for SAR submission under PMLA Section 12.
+
+During the monitoring period, the account received {transaction_count} inbound international wire transfers originating from offshore sources aggregating to INR {total_amount}. Within a short period of each inbound receipt, the account executed outbound international wire transfers of equivalent or near-equivalent value directed to separate offshore entities. The net change in account balance across the full monitoring period was negligible, confirming that the account served exclusively as a transit mechanism with no commercial value retained by the account holder.
+
+The cross-border fund flows are irreconcilable with the account holder's declared financial and business profile. The INR {total_amount} transited during the monitoring period represents a {deviation_pct}% deviation above the account holder's established baseline. No supporting trade documentation, contractual agreements, invoices, or investment instruments corresponding to the observed international fund flows have been identified in the account's records.
+
+The circular fund flow pattern — offshore inflows followed by equivalent offshore outflows through a domestic transit account with near-zero residual balance — is consistent with the recognised AML typology of {alert_type}. This technique is employed to repatriate funds of illicit origin as apparent legitimate foreign investment or trade proceeds, thereby integrating illicit funds into the formal financial system. The involvement of {destination_country} as an outbound destination jurisdiction elevates the risk profile of the observed transfers.
+
+Based on the totality of the evidence, the filing institution has determined that the activity is suspicious and files this SAR pursuant to PMLA Section 12. The account has been suspended pending enhanced due diligence. Source of funds and beneficial ownership documentation has been requested, and the matter has been escalated to the institution's Financial Intelligence Unit and external legal counsel.
